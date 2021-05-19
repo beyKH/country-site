@@ -1,0 +1,266 @@
+:root{
+  --main-font:"Nunito Sans","Arial",sans-serif;
+  --color-white:#fff;
+  --color-black: #111517;
+}
+
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-Regular.woff2") format("woff2"),
+    url("../fonts/NunitoSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/NunitoSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2"),
+    url("../fonts/NunitoSans-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-Light.woff2") format("woff2"),
+    url("../fonts/NunitoSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html{
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+
+}
+
+body{
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+.container{
+  max-width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header {
+  background-color: var(--white-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+}
+
+.site-logo{
+  text-decoration: none;
+  color: var(--color-black);
+}
+.header-heading {
+
+
+}
+
+.site-header-container{
+  padding-top: 23px ;
+  padding-bottom: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+.dark-mode {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode::before{
+  content: '';
+  display: flex;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/moon.png");
+  background-repeat: no-repeat;
+}
+
+
+.site-content{
+  background-color: #f2f2f2;
+  /* flex-grow: 1; */
+}
+
+
+/* -----------   filter section  ------- */
+
+
+
+
+.filter-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+
+.search-input{
+  border: none;
+  width: 480px;
+  background-color: var(--color-white);
+  background-image: url("../img/magnifier.png");
+  background-position: left calc(32px) center;
+  background-repeat: no-repeat;
+  padding-left: 74px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 20px;
+
+}
+.search-input:focus{
+  outline: none;
+}
+
+.select-region{
+  border: none;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+  width: 200px;
+  padding: 18px 24px;
+}
+
+.select-region:hover{
+  cursor:pointer;
+}
+.select-region:focus {
+  outline: none;
+}
+
+
+/* country */
+
+.country-section {
+
+}
+
+.country-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  /* margin: 0; */
+}
+
+.country-item {
+  background-color: var(--color-white);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.0294384);
+  /* margin-right: 75px; */
+  margin-bottom: 75px;
+  transition: box-shadow 0.4s ease;
+
+}
+
+.country-item:hover{
+  box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.3);
+}
+
+.country-item:last-child{
+  margin-right: 0;
+}
+
+.country-link{
+  text-decoration: none;
+}
+
+.item-country-img {
+  display: block;
+  margin-bottom: 24px;
+  width: 263px;
+  height: 160px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.country-item-desc {
+  padding-left:24px ;
+  padding-bottom: 45px;
+}
+
+.country-item-heading {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--color-black);
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.country-item-value {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.country-item-value:last-child{
+  margin-bottom: 0;
+}
+
+.country-item-property {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-black);
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+
+
+/* qanday qilib optionga dizayn berish kerek */
+/* .select-region-option{
+  width: 200px;
+  padding: 18px 24px;
+  display: inline-block;
+} */
