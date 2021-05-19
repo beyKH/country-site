@@ -136,7 +136,10 @@ img{
   padding-top: 48px;
   padding-bottom: 48px;
 }
-
+.form-search-country{
+  display: flex;
+  justify-content: space-between;
+}
 
 .search-input{
   border: none;
@@ -166,6 +169,7 @@ img{
   border-radius: 5px;
   width: 200px;
   padding: 18px 24px;
+  margin-left: auto;
 }
 
 .select-region:hover{
@@ -174,7 +178,11 @@ img{
 .select-region:focus {
   outline: none;
 }
-
+.form-search-country{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
 /* country */
 
