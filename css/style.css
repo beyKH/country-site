@@ -241,6 +241,7 @@ img{
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
+  color: var(--color-black);
 }
 
 .country-item-value:last-child{
