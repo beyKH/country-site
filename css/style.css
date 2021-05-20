@@ -2,6 +2,7 @@
   --main-font:"Nunito Sans","Arial",sans-serif;
   --color-white:#fff;
   --color-black: #111517;
+  --color-bg-main: #f2f2f2;
 }
 
 
@@ -66,6 +67,11 @@ img{
   height: auto;
 }
 
+.theme-dark{
+  --color-white:#2B3844;
+  --color-black: #fff;
+  --color-bg-main: #202C36;
+}
 
 .container{
   max-width: 1320px;
@@ -78,6 +84,7 @@ img{
 .site-header {
   background-color: var(--white-color);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+  transition: background-color 0.5s ease;
 }
 
 .site-logo{
@@ -85,12 +92,16 @@ img{
   color: var(--color-black);
 }
 .header-heading {
+  color:var(--color-black);
   font-weight: 800;
   font-size: 24px;
   line-height: 33px;
 
 }
-
+.site-header{
+  transition: background-color 0.5s ease;
+  background-color: var(--color-white);
+}
 .site-header-container{
   padding-top: 23px ;
   padding-bottom: 23px;
@@ -102,12 +113,15 @@ img{
 
 
 .dark-mode {
+  border: none;
+  background-color: transparent;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   color: var(--color-black);
   display: flex;
   align-items: center;
+
 }
 
 .dark-mode::before{
@@ -121,7 +135,8 @@ img{
 
 
 .site-content{
-  background-color: #f2f2f2;
+  transition: background-color 0.5s ease;
+  background-color: var(--color-bg-main);
   /* flex-grow: 1; */
 }
 
@@ -159,6 +174,7 @@ img{
   line-height: 20px;
 
 }
+
 .search-input:focus{
   outline: none;
 }
@@ -195,10 +211,11 @@ img{
 .country-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   list-style: none;
   padding: 0;
-  /* margin: 0; */
+  margin: 0;
+  margin-left: -75px;
 }
 
 .country-item {
@@ -206,7 +223,7 @@ img{
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.0294384);
-  /* margin-right: 75px; */
+  margin-left  : 75px;
   margin-bottom: 75px;
   transition: box-shadow 0.4s ease;
 
@@ -245,6 +262,11 @@ img{
   color: var(--color-black);
   margin-top: 0;
   margin-bottom: 15px;
+}
+
+.country-item{
+  transition: background-color 0.5s ease;
+
 }
 
 .country-item-value {

@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>world</title>
-  <!-- <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css"> -->
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style.min.css"> -->
 </head>
 <body>
   <header class="site-header">
@@ -15,12 +15,12 @@
       <a class="site-logo" href="#">
         <h1 class="header-heading">Where in the world?</h1>
       </a>
-      <span class="dark-mode">Dark mode</span>
+      <button class="dark-mode">Dark mode</button>
     </div>
   </header>
 
 
-  <main class="site-content">
+  <main class="site-content ">
     <div class="filter-section container">
       <form class="form-search-country" action="https://echo.htmlacademy.ru">
 
@@ -154,6 +154,12 @@
     </section>
   </main>
 
+  <script>
+    var elSiteHeaderThemeButton = document.querySelector('.dark-mode');
 
+    elSiteHeaderThemeButton.addEventListener('click', function () {
+      document.body.classList.toggle('theme-dark');
+    });
+  </script>
 </body>
 </html>
