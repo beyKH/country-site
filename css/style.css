@@ -84,7 +84,7 @@ img{
 .site-header {
   background-color: var(--white-color);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
-  transition: background-color 0.5s ease;
+  transition: background-color 0.3s ease;
 }
 
 .site-logo{
@@ -99,7 +99,7 @@ img{
 
 }
 .site-header{
-  transition: background-color 0.5s ease;
+  transition: background-color 0.3s ease;
   background-color: var(--color-white);
 }
 .site-header-container{
@@ -135,7 +135,7 @@ img{
 
 
 .site-content{
-  transition: background-color 0.5s ease;
+  transition: background-color 0.3s ease;
   background-color: var(--color-bg-main);
   /* flex-grow: 1; */
 }
@@ -265,7 +265,7 @@ img{
 }
 
 .country-item{
-  transition: background-color 0.5s ease;
+  transition: background-color 0.3s ease;
 
 }
 
